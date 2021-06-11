@@ -14,8 +14,8 @@ namespace FOS\UserBundle\EventListener;
 use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Component\HttpFoundation\Session\SessionInterface; 
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class FlashListener implements EventSubscriberInterface
 {
