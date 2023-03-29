@@ -134,6 +134,11 @@ abstract class User implements UserInterface, GroupableInterface
 
         return $this;
     }
+    
+    public function __serialize(): array
+    {
+        return $this->serialize();
+    }
 
     /**
      * {@inheritdoc}
@@ -181,6 +186,11 @@ abstract class User implements UserInterface, GroupableInterface
         ) = $data;
     }
 
+    public function __unserialize($serialized): array
+    {
+        return $this->unserialize($serialized);
+    }
+    
     /**
      * {@inheritdoc}
      */
