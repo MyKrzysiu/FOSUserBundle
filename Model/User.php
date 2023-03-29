@@ -186,9 +186,9 @@ abstract class User implements UserInterface, GroupableInterface
         ) = $data;
     }
 
-    public function __unserialize($serialized): array
+    public function __unserialize($serialized): void
     {
-        return $this->unserialize($serialized);
+        $this->unserialize($serialized);
     }
     
     /**
